@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #0c182d;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  background-color: #15263f;
+  margin: auto;
+  border-radius: 1.25rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.8rem;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.descricao h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.descricao h1:hover {
+  color: #24f4ee;
+}
+
+.descricao p {
+  font-weight: 300;
+  color: #7187a6;
+}
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho img {
+  max-width: 604px;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+#price {
+  font-weight: 600;
+  color: #24f4ee;
+}
+.product-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-price--info img {
+  max-width: 30px;
+}
+
+.autor {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+  border-top-color: #ddd;
+  border-top-style: solid;
+  border-top-width: 0.01rem;
+  padding-top: 1rem;
+}
+
+.autor img {
+  max-width: 38px;
+  width: 100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+.autor h2 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #7187a6;
+}
+
+#autor-name {
+  color: #c5d1e4;
+}
+
+#autor-name:hover {
+  color: #24f4ee;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 85%;
+  }
+
+  .descricao {
+    gap: 1.2rem;
+  }
+  .descricao p {
+    font-size: 16px;
+  }
+  .autor {
+    gap: 1rem;
+  }
+  .autor h2 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 577px) {
+  .container {
+    width: 80%;
+  }
+
+  .descricao p {
+    font-size: 20px;
+  }
+}
